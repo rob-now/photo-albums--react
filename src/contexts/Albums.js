@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import albums from '../database/albums'
+import photos from '../database/photos'
 
 const AlbumsContext = React.createContext()
 
@@ -7,24 +9,8 @@ export const AlbumsConsumer = AlbumsContext.Consumer
 export class AlbumsProvider extends Component {
 
   state = {
-    albums: [
-      {
-        id: 0,
-        url: 'http://via.placeholder.com/800x600'
-      },
-      {
-        id: 1,
-        url: 'http://via.placeholder.com/800x600'
-      },
-      {
-        id: 2,
-        url: 'http://via.placeholder.com/800x600'
-      },
-      {
-        id: 3,
-        url: 'http://via.placeholder.com/800x600'
-      }
-    ]
+    albums,
+    photos
   }
 
   render() {

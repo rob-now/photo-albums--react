@@ -1,4 +1,5 @@
 import React, {Component, Fragment} from 'react'
+import {withAlbums} from "./contexts/Albums";
 
 class PhotosGridView extends Component {
 
@@ -19,4 +20,4 @@ class PhotosGridView extends Component {
   }
 }
 
-export default PhotosGridView
+export default withAlbums(PhotosGridView)

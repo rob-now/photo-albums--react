@@ -13,6 +13,7 @@ class AlbumsView extends Component {
 
     return (
       <Fragment>
+        <h2>Albums</h2>
         <Grid>
           <Row>
             {
