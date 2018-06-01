@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react'
-import {withAlbums} from "./contexts/Albums";
+import {withAlbums} from "../contexts/Albums";
 import PhotoItem from "./PhotoItem";
 
 
