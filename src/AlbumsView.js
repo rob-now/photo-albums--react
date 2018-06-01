@@ -22,6 +22,10 @@ const albums = [
 ]
 
 class AlbumsView extends Component {
+
+  handleGoToPhotosGrid = () =>
+    this.props.history.push('/photos-grid')
+
   render() {
     return (
       <Fragment>
@@ -38,6 +42,7 @@ class AlbumsView extends Component {
                       src={url}
                       className="img-responsive PhotoAlbums__Album"
                       alt={`Album ${id + 1}`}
+                      onClick={this.handleGoToPhotosGrid}
                     />
                   </Col>
               )

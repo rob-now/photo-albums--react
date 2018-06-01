@@ -1,13 +1,18 @@
 import React, {Component, Fragment} from 'react'
-import {Link} from 'react-router-dom'
 
 class PhotosGridView extends Component {
+
+  handleGoBackToAlbums = () =>
+    this.props.history.push('/')
+
   render() {
     return (
       <Fragment>
-        <Link to="/">
-          <button>Go back to Albums</button>
-        </Link>
+        <button
+          onClick={this.handleGoBackToAlbums}
+        >
+          Go back to Albums
+        </button>
         <h2>Photos grid view</h2>
       </Fragment>
     )
