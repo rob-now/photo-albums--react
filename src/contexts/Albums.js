@@ -26,7 +26,8 @@ export function withAlbums(Component) {
   function AlbumsAwareComponent(props) {
     return (
       <AlbumsConsumer>
-        {albums => <Component {...props} albums={albums}/>}
+        {state =>
+          <Component {...props} {...state}/>}
       </AlbumsConsumer>
     )
   }

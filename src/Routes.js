@@ -9,7 +9,7 @@ class Routes extends Component {
     return (
       <Fragment>
         <Route exact path="/" component={AlbumsView}/>
-        <Route path="/photos-grid" component={PhotosGridView}/>
+        <Route path="/album/:albumId" component={PhotosGridView}/>
       </Fragment>
     )
   }
