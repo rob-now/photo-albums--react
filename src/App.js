@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
-import AlbumsView from "./AlbumsView";
+import {BrowserRouter as Router} from 'react-router-dom'
+import Routes from './Routes'
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <AlbumsView/>
-      </div>
+      <Router>
+        <Routes/>
+      </Router>
     );
   }
 }
