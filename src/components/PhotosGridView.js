@@ -1,7 +1,6 @@
 import React, {Component, Fragment} from 'react'
-import {withAlbums} from "../contexts/Albums";
 import PhotoItem from "./PhotoItem";
-
+import {withAlbums} from "../contexts/Albums";
 
 class PhotosGridView extends Component {
 

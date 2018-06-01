@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react'
 import {Grid, Row, Col} from 'react-bootstrap'
-import './PhotosGridView.css'
+import './PhotoItem.css'
 
 class PhotoItem extends Component {
   render() {
