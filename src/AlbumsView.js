@@ -1,25 +1,7 @@
 import React, {Component, Fragment} from 'react'
 import {Grid, Row, Col} from 'react-bootstrap'
 import './AlbumsView.css'
-
-const albums = [
-  {
-    id: 0,
-    url: 'http://via.placeholder.com/800x600'
-  },
-  {
-    id: 1,
-    url: 'http://via.placeholder.com/800x600'
-  },
-  {
-    id: 2,
-    url: 'http://via.placeholder.com/800x600'
-  },
-  {
-    id: 3,
-    url: 'http://via.placeholder.com/800x600'
-  }
-]
+import {withAlbums} from "./contexts/Albums";
 
 class AlbumsView extends Component {
 
@@ -27,6 +9,8 @@ class AlbumsView extends Component {
     this.props.history.push('/photos-grid')
 
   render() {
+    const {albums} = this.props.albums
+
     return (
       <Fragment>
         <Grid>
@@ -54,4 +38,4 @@ class AlbumsView extends Component {
   }
 }
 
-export default AlbumsView
+export default withAlbums(AlbumsView)
