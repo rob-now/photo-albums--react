@@ -49,5 +49,22 @@
         "url": "http://via.placeholder.com/800x600"
       }
     ]
+  },
+  {
+    "albumId": 3,
+    "photos": [
+      {
+        "id": 9,
+        "url": "http://via.placeholder.com/800x600"
+      },
+      {
+        "id": 10,
+        "url": "http://via.placeholder.com/800x600"
+      },
+      {
+        "id": 11,
+        "url": "http://via.placeholder.com/800x600"
+      }
+    ]
   }
 ]
