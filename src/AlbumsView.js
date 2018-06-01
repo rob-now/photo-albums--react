@@ -30,8 +30,15 @@ class AlbumsView extends Component {
             {
               albums && albums.map(
                 ({id, url}) =>
-                  <Col key={id} md={4}>
-                    <img src={url} className="img-responsive PhotoAlbums__Album" alt={`Album ${id + 1}`}/>
+                  <Col
+                    key={id}
+                    md={4}
+                  >
+                    <img
+                      src={url}
+                      className="img-responsive PhotoAlbums__Album"
+                      alt={`Album ${id + 1}`}
+                    />
                   </Col>
               )
             }
