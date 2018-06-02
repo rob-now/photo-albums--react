@@ -26,19 +26,6 @@
 img[class*=PhotoAlbums__Album] {
     padding: 15px 0;
     animation: 0.8s ease-out 0s 1 slideInFromLeft;
-    transition: 0.2s all linear;
-}
-
-.row div[class*=col]:nth-child(even) img[class*=PhotoAlbums__Album]:hover {
-    transform: rotate(-2deg) scale(1.2);
-    transition: .2s all linear;
-    cursor: pointer;
-}
-
-.row div[class*=col]:nth-child(odd) img[class*=PhotoAlbums__Album]:hover {
-    transform: rotate(2deg) scale(1.2);
-    transition: .2s all linear;
-    cursor: pointer;
 }
 
 .PhotoAlbums__Album--Description--Container {
@@ -57,8 +44,20 @@ img[class*=PhotoAlbums__Album] {
     transition: opacity .3s;
 }
 
+.row div[class*=col]:hover .PhotoAlbums__Album--Description--Container {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
+
 .PhotoAlbums__Album--Description {
     font-size: 1.5em;
+    text-transform: uppercase;
     transition: .2s;
     transform: translateY(1.2em);
+}
+
+.row div[class*=col]:hover .PhotoAlbums__Album--Description {
+    transform: translateY(0);
+    cursor: pointer;
 }
