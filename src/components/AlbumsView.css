@@ -1,3 +1,42 @@
-.PhotoAlbums__Album {
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-1000%);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: translateX(20%);
+        opacity: 0.75;
+    }
+
+    85% {
+        opacity: 0.85;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+img[class*=PhotoAlbums__Album] {
     padding: 1em 0;
+    animation: 0.8s ease-out 0s 1 slideInFromLeft;
+    transition: .2s all linear;
+}
+
+.row div[class*=col]:nth-child(even) img[class*=PhotoAlbums__Album]:hover {
+    transform: rotate(-2deg) scale(1.2);
+    transition: .2s all linear;
+    cursor: pointer;
+}
+
+.row div[class*=col]:nth-child(odd) img[class*=PhotoAlbums__Album]:hover {
+    transform: rotate(2deg) scale(1.2);
+    transition: .2s all linear;
+    cursor: pointer;
 }

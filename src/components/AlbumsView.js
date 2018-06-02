@@ -22,7 +22,7 @@ class AlbumsView extends Component {
                   >
                     <img
                       src={url}
-                      className="img-responsive PhotoAlbums__Album"
+                      className={`img-responsive PhotoAlbums__Album--${id}`}
                       alt={`Album ${id + 1}`}
                       onClick={() =>
                         this.props.history.push(`/album/${id}`)}
