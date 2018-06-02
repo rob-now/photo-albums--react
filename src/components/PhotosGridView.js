@@ -1,5 +1,6 @@
-import React, {Component, Fragment} from 'react'
+import React, {Component} from 'react'
 import PhotoItem from "./PhotoItem";
+import './main.css'
 import './PhotosGridView.css'
 import 'font-awesome/css/font-awesome.min.css'
 import {withAlbums} from "../contexts/Albums";
@@ -11,12 +12,7 @@ class PhotosGridView extends Component {
 
   render() {
     return (
-      <Fragment>
-        {/*<button*/}
-          {/*onClick={this.handleGoBackToAlbums}*/}
-        {/*>*/}
-          {/*Go back to Albums*/}
-        {/*</button>*/}
+      <div className="fadeIn">
         <h1>
           <i
             className="fas fa-arrow-circle-left"
@@ -27,7 +23,7 @@ class PhotosGridView extends Component {
           </span>
         </h1>
         <PhotoItem {...this.props}/>
-      </Fragment>
+      </div>
     )
   }
 }
