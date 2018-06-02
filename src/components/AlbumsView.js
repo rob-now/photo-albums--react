@@ -16,7 +16,7 @@ class AlbumsView extends Component {
           <Row>
             {
               albums && albums.map(
-                ({id, url}) =>
+                ({id, albumName, url}) =>
                   <Col
                     key={id}
                     md={4}
@@ -34,7 +34,7 @@ class AlbumsView extends Component {
                       <p
                         className="PhotoAlbums__Album--Description"
                       >
-                        Photo album {id + 1}
+                        {albumName || `Photo album ${id + 1}`}
                       </p>
                     </div>
                   </Col>

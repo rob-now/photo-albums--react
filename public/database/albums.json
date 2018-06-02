@@ -1,26 +1,32 @@
 [
   {
     "id": 0,
+    "albumName": "roads",
     "url": "http://via.placeholder.com/800x600"
   },
   {
     "id": 1,
+    "albumName": "animals",
     "url": "http://via.placeholder.com/800x600"
   },
   {
     "id": 2,
+    "albumName": "plants",
     "url": "http://via.placeholder.com/800x600"
   },
   {
     "id": 3,
+    "albumName": "cars",
     "url": "http://via.placeholder.com/800x600"
   },
   {
     "id": 4,
+    "albumName": null,
     "url": "http://via.placeholder.com/800x600"
   },
   {
     "id": 5,
+    "albumName": null,
     "url": "http://via.placeholder.com/800x600"
   }
 ]
