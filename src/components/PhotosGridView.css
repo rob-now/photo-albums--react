@@ -4,10 +4,11 @@
 
 .fa-arrow-circle-left {
     cursor: pointer;
-    color: rgba(0, 140, 206, 0.7);
+    color: rgba(0, 140, 206, 1);
     transition: 0.3s all linear;
 }
 
 .fa-arrow-circle-left:hover {
     transition: 0.3s all;
+    color: rgba(0, 140, 206, 0.7);
 }
