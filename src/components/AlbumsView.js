@@ -27,6 +27,9 @@ class AlbumsView extends Component {
                       onClick={() =>
                         this.props.history.push(`/album/${id}`)}
                     />
+                    <div className="PhotoAlbums__Album--Description--Container">
+                      <p className="PhotoAlbums__Album--Description">Album {id + 1}</p>
+                    </div>
                   </Col>
               )
             }
