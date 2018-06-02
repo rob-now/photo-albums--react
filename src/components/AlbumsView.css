@@ -23,8 +23,8 @@
     }
 }
 
-img[class*=PhotoAlbums__Album] {
-    padding: 15px 0;
+.bs--col {
+    padding: 15px;
 }
 
 img[class*=PhotoAlbums__Album],
@@ -48,7 +48,7 @@ img[class*=PhotoAlbums__Album],
     transition: opacity .3s;
 }
 
-.row div[class*=col]:hover .PhotoAlbums__Album--Description--Container {
+.PhotoAlbums__Album--Container:hover .PhotoAlbums__Album--Description--Container {
     visibility: visible;
     opacity: 1;
     cursor: pointer;
@@ -62,7 +62,7 @@ img[class*=PhotoAlbums__Album],
     transform: translateY(1.2em);
 }
 
-.row div[class*=col]:hover .PhotoAlbums__Album--Description {
+.PhotoAlbums__Album--Container:hover .PhotoAlbums__Album--Description {
     transform: translateY(0);
     cursor: pointer;
 }
