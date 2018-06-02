@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react'
 import {Grid, Row, Col} from 'react-bootstrap'
 import './AlbumsView.css'
+import './main.css'
 import {withAlbums} from "../contexts/Albums";
 
 class AlbumsView extends Component {
@@ -10,7 +11,7 @@ class AlbumsView extends Component {
 
     return (
       <Fragment>
-        <h2>Albums</h2>
+        <h1>My photo albums</h1>
         <Grid>
           <Row>
             {

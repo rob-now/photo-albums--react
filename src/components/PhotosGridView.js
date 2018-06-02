@@ -15,7 +15,7 @@ class PhotosGridView extends Component {
         >
           Go back to Albums
         </button>
-        <h2>Photos grid view</h2>
+        <h1>Photos grid view</h1>
         <PhotoItem {...this.props}/>
       </Fragment>
     )
