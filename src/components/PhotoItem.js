@@ -4,9 +4,13 @@ import './PhotoItem.css'
 import './main.css'
 
 class PhotoItem extends Component {
+
+  isPhotoIdMatching = photo =>
+    photo.albumId === parseInt(this.props.match.params.albumId, 10)
+
   render() {
     const {photos} = this.props
-    console.log()
+
     return (
       <Fragment>
         <Grid>
@@ -14,11 +18,11 @@ class PhotoItem extends Component {
             {
               photos.some(
                 photo =>
-                  photo.albumId === parseInt(this.props.match.params.albumId, 10)
+                  this.isPhotoIdMatching(photo)
               ) ? (
                   photos.filter(
                     photo =>
-                      photo.albumId === parseInt(this.props.match.params.albumId, 10)
+                      this.isPhotoIdMatching(photo)
                   ).map(
                     ({photos}) =>
                       photos.map(
