@@ -1,6 +1,4 @@
 import React, {Component} from 'react'
-import albums from '../database/albums'
-import photos from '../database/photos'
 
 const AlbumsContext = React.createContext()
 
@@ -9,8 +7,49 @@ export const AlbumsConsumer = AlbumsContext.Consumer
 export class AlbumsProvider extends Component {
 
   state = {
-    albums,
-    photos
+    albums: null,
+    photos: null,
+    fetching: false,
+    error: null
+  }
+
+  componentDidMount() {
+    this.setState({
+      fetching: true,
+      error: null
+    })
+
+    fetch(
+      process.env.PUBLIC_URL + '/database/albums.json'
+    ).then(
+      response => response.json()
+    ).then(
+      albums => this.setState({
+        albums: albums,
+        fetching: false
+      })
+    ).catch(
+      error => this.setState({
+        error: error,
+        fetching: false
+      })
+    )
+
+    fetch(
+      process.env.PUBLIC_URL + '/database/photos.json'
+    ).then(
+      response => response.json()
+    ).then(
+      photos => this.setState({
+        photos: photos,
+        fetching: false
+      })
+    ).catch(
+      error => this.setState({
+        error: error,
+        fetching: false
+      })
+    )
   }
 
   render() {

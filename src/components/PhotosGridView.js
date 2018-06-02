@@ -18,8 +18,8 @@ class PhotosGridView extends Component {
             className="fas fa-arrow-circle-left"
             onClick={this.handleGoBackToAlbums}
           >&nbsp;</i>
-          Photos from <span
-          className="PhotosGridView__AlbumNumber">album {parseInt(this.props.match.params.albumId, 10) + 1}
+          <span
+          className="PhotosGridView__AlbumNumber">Album {parseInt(this.props.match.params.albumId, 10) + 1}
           </span>
         </h1>
         <PhotoItem {...this.props}/>

@@ -16,7 +16,7 @@ class PhotoItem extends Component {
         <Grid>
           <Row>
             {
-              photos.some(
+              photos && photos.some(
                 photo =>
                   this.isPhotoIdMatching(photo)
               ) ? (
