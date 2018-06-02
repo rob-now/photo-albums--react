@@ -25,6 +25,10 @@
 
 img[class*=PhotoAlbums__Album] {
     padding: 15px 0;
+}
+
+img[class*=PhotoAlbums__Album],
+.PhotoAlbums__Album--Description--Container {
     animation: 0.8s ease-out 0s 1 slideInFromLeft;
 }
 
