@@ -11,6 +11,8 @@ class PhotosGridView extends Component {
     this.props.history.push('/')
 
   render() {
+    const {albumId, albumName} = this.props.match.params
+
     return (
       <div className="fadeIn">
         <h1>
@@ -19,7 +21,7 @@ class PhotosGridView extends Component {
             onClick={this.handleGoBackToAlbums}
           >&nbsp;</i>
           <span
-          className="PhotosGridView__AlbumNumber">Album {parseInt(this.props.match.params.albumId, 10) + 1}
+            className="PhotosGridView__AlbumNumber">{albumName || `Album ${parseInt(albumId, 10) + 1}`}
           </span>
         </h1>
         <PhotoItem {...this.props}/>

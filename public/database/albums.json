@@ -21,12 +21,12 @@
   },
   {
     "id": 4,
-    "albumName": null,
+    "albumName": "",
     "url": "http://via.placeholder.com/800x600"
   },
   {
     "id": 5,
-    "albumName": null,
+    "albumName": "",
     "url": "http://via.placeholder.com/800x600"
   }
 ]

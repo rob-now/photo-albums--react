@@ -31,7 +31,10 @@ class AlbumsView extends Component {
                       <div
                         className="PhotoAlbums__Album--Description--Container"
                         onClick={() =>
-                          this.props.history.push(`/album/${id}`)}
+                          albumName !== "" ?
+                            this.props.history.push(`/album/${albumName}/${id}`) :
+                            this.props.history.push(`/album/${id}`)
+                        }
                       >
                         <p
                           className="PhotoAlbums__Album--Description"
