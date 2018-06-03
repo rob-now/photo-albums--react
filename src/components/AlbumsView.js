@@ -7,7 +7,9 @@ import {withAlbums} from "../contexts/Albums";
 class AlbumsView extends Component {
 
   render() {
-    const {albums} = this.props
+    const {albums, photos} = this.props
+    console.log('photos', photos)
+    let currentPhotosArrayLength = 0
 
     return (
       <Fragment>
@@ -24,7 +26,22 @@ class AlbumsView extends Component {
                   >
                     <div className="PhotoAlbums__Album--Container">
                       <img
-                        src={url}
+                        src={
+                          photos && photos.filter(
+                            photo => photo.albumId === id
+                          ).map(
+                            ({photos}) => {
+                              currentPhotosArrayLength = photos.length
+                              return photos.map(
+                                photo =>
+                                  photo.url
+                              )
+                            }
+                          ).reduce(
+                            (total, next) =>
+                              total.concat(next), []
+                          )[Math.floor(Math.random() * currentPhotosArrayLength)]
+                        }
                         className={`img-responsive PhotoAlbums__Album--${id}`}
                         alt={`Album ${id + 1}`}
                       />
