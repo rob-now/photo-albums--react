@@ -49,8 +49,6 @@ class PhotoItem extends Component {
                 <div className="PhotosGridView__NoPhotosMessage">
                   <h2>Currently there are no photos in this album.</h2>
                 </div>
-
-
             }
           </Row>
         </Grid>
