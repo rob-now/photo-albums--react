@@ -26,7 +26,7 @@ class PhotoItem extends Component {
                   ).map(
                     ({photos}) =>
                       photos.map(
-                        ({id, url}) =>
+                        ({id, url, author}) =>
                           <Col
                             key={id}
                             md={4}
@@ -34,7 +34,7 @@ class PhotoItem extends Component {
                             <img
                               src={url}
                               className="img-responsive PhotosGridView__Photo"
-                              alt={`Photo ${id + 1}`}
+                              alt={author}
                             />
                           </Col>
                       )
