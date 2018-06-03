@@ -21,7 +21,7 @@ class PhotosGridView extends Component {
             onClick={this.handleGoBackToAlbums}
           >&nbsp;</i>
           <span
-            className="PhotosGridView__AlbumNumber">{albumName || `Album ${parseInt(albumId, 10) + 1}`}
+            className="PhotosGridView__AlbumName">{albumName || `Album ${parseInt(albumId, 10) + 1}`}
           </span>
         </h1>
         <PhotoItem {...this.props}/>
