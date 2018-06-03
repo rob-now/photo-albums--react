@@ -36,6 +36,10 @@ h1 {
     animation: 1s ease-out 0s 1 fadeIn;
 }
 
+.bodyBgColor{
+    transition: 2s all ease-in;
+}
+
 @media screen and (max-width: 576px) {
     h1 {
         font-size: 2em;

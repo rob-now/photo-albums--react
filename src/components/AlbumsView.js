@@ -43,7 +43,8 @@ class AlbumsView extends Component {
                               ).reduce(
                                 (total, next) =>
                                   total.concat(next), []
-                              )[Math.floor(Math.random() * currentPhotosArrayLength)]
+                                // )[Math.floor(Math.random() * currentPhotosArrayLength)]
+                              )[0]
                             ) :
                             defaultAlbumUrl
                         }
