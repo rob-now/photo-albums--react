@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react'
 import {Grid, Row, Col} from 'react-bootstrap'
-import './PhotoItem.css'
 import './main.css'
+import './PhotoItem.css'
 import "animate.css/animate.min.css"
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -32,15 +32,18 @@ class PhotoItem extends Component {
                           <Col
                             key={id}
                             md={4}
+                            className="bs--col"
                           >
                             <ScrollAnimation
                               animateIn="fadeIn"
                             >
-                              <img
-                                src={url}
-                                className="img-responsive PhotosGridView__Photo"
-                                alt={author}
-                              />
+                              <div className="PhotosGridView__Photo--Container">
+                                <img
+                                  src={url}
+                                  className="img-responsive PhotosGridView__Photo"
+                                  alt={author}
+                                />
+                              </div>
                             </ScrollAnimation>
                           </Col>
                       )
