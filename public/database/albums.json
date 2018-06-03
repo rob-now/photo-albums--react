@@ -2,31 +2,37 @@
   {
     "id": 0,
     "albumName": "roads",
-    "url": "http://via.placeholder.com/800x600"
+    "defaultUrl": "/database/photos/defaultUrl/cristian-balu-a-405976-unsplash.jpg",
+    "author": "Photo by Cristian Băluță on Unsplash"
   },
   {
     "id": 1,
     "albumName": "animals",
-    "url": "http://via.placeholder.com/800x600"
+    "defaultUrl": "/database/photos/defaultUrl/cristian-balu-a-405976-unsplash.jpg",
+    "author": "Photo by Cristian Băluță on Unsplash"
   },
   {
     "id": 2,
     "albumName": "plants",
-    "url": "http://via.placeholder.com/800x600"
+    "defaultUrl": "/database/photos/defaultUrl/cristian-balu-a-405976-unsplash.jpg",
+    "author": "Photo by Cristian Băluță on Unsplash"
   },
   {
     "id": 3,
     "albumName": "cars",
-    "url": "http://via.placeholder.com/800x600"
+    "defaultUrl": "/database/photos/defaultUrl/cristian-balu-a-405976-unsplash.jpg",
+    "author": "Photo by Cristian Băluță on Unsplash"
   },
   {
     "id": 4,
     "albumName": "",
-    "url": "http://via.placeholder.com/800x600"
+    "defaultUrl": "/database/photos/defaultUrl/cristian-balu-a-405976-unsplash.jpg",
+    "author": "Photo by Cristian Băluță on Unsplash"
   },
   {
     "id": 5,
     "albumName": "",
-    "url": "http://via.placeholder.com/800x600"
+    "defaultUrl": "/database/photos/defaultUrl/cristian-balu-a-405976-unsplash.jpg",
+    "author": "Photo by Cristian Băluță on Unsplash"
   }
 ]

@@ -8,7 +8,6 @@ class AlbumsView extends Component {
 
   render() {
     const {albums, photos} = this.props
-    console.log('photos', photos)
     let currentPhotosArrayLength = 0
 
     return (
@@ -18,7 +17,7 @@ class AlbumsView extends Component {
           <Row>
             {
               albums && albums.map(
-                ({id, albumName, url}) =>
+                ({id, albumName, defaultUrl}) =>
                   <Col
                     key={id}
                     md={4}
@@ -27,20 +26,26 @@ class AlbumsView extends Component {
                     <div className="PhotoAlbums__Album--Container">
                       <img
                         src={
-                          photos && photos.filter(
-                            photo => photo.albumId === id
-                          ).map(
-                            ({photos}) => {
-                              currentPhotosArrayLength = photos.length
-                              return photos.map(
-                                photo =>
-                                  photo.url
-                              )
-                            }
-                          ).reduce(
-                            (total, next) =>
-                              total.concat(next), []
-                          )[Math.floor(Math.random() * currentPhotosArrayLength)]
+                          photos && photos.some(
+                            photo =>
+                              photo.albumId === id
+                          ) ? (
+                            photos && photos.filter(
+                              photo => photo.albumId === id
+                            ).map(
+                              ({photos}) => {
+                                currentPhotosArrayLength = photos.length
+                                return photos.map(
+                                  photo =>
+                                    photo.url
+                                )
+                              }
+                            ).reduce(
+                              (total, next) =>
+                                total.concat(next), []
+                            )[Math.floor(Math.random() * currentPhotosArrayLength)]
+                          ) :
+                            defaultUrl
                         }
                         className={`img-responsive PhotoAlbums__Album--${id}`}
                         alt={`Album ${id + 1}`}
