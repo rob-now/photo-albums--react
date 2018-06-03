@@ -3,7 +3,7 @@ import PhotoItem from "./PhotoItem";
 import './main.css'
 import './PhotosGridView.css'
 import 'font-awesome/css/font-awesome.min.css'
-import {withAlbums} from "../contexts/Albums";
+import {withAlbums} from '../contexts/Albums';
 
 class PhotosGridView extends Component {
 

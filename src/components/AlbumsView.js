@@ -2,7 +2,7 @@ import React, {Component, Fragment} from 'react'
 import {Grid, Row, Col} from 'react-bootstrap'
 import './main.css'
 import './AlbumsView.css'
-import {withAlbums} from "../contexts/Albums";
+import {withAlbums} from '../contexts/Albums';
 
 class AlbumsView extends Component {
 

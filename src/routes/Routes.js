@@ -2,7 +2,7 @@ import React, {Component, Fragment} from 'react'
 import {Route} from 'react-router-dom'
 
 import AlbumsView from '../components/AlbumsView'
-import PhotosGridView from "../components/PhotosGridView";
+import PhotosGridView from '../components/PhotosGridView';
 
 class Routes extends Component {
   render() {

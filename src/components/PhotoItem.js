@@ -2,7 +2,7 @@ import React, {Component, Fragment} from 'react'
 import {Grid, Row, Col} from 'react-bootstrap'
 import './main.css'
 import './PhotoItem.css'
-import "animate.css/animate.min.css"
+import 'animate.css/animate.min.css'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 class PhotoItem extends Component {
