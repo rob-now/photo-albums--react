@@ -9,6 +9,8 @@ export class AlbumsProvider extends Component {
   state = {
     albums: null,
     photos: null,
+    defaultAlbumUrl: '/database/photos/defaultUrl/cristian-balu-a-405976-unsplash.jpg',
+    defaultAlbumUrlAuthor: 'Photo by Cristian Băluță on Unsplash',
     fetching: false,
     error: null
   }

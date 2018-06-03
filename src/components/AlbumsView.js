@@ -7,7 +7,7 @@ import {withAlbums} from "../contexts/Albums";
 class AlbumsView extends Component {
 
   render() {
-    const {albums, photos} = this.props
+    const {albums, photos, defaultAlbumUrl} = this.props
     let currentPhotosArrayLength = 0
 
     return (
@@ -17,7 +17,7 @@ class AlbumsView extends Component {
           <Row>
             {
               albums && albums.map(
-                ({id, albumName, defaultUrl}) =>
+                ({id, albumName}) =>
                   <Col
                     key={id}
                     md={4}
@@ -45,7 +45,7 @@ class AlbumsView extends Component {
                                 total.concat(next), []
                             )[Math.floor(Math.random() * currentPhotosArrayLength)]
                           ) :
-                            defaultUrl
+                            defaultAlbumUrl
                         }
                         className={`img-responsive PhotoAlbums__Album--${id}`}
                         alt={`Album ${id + 1}`}

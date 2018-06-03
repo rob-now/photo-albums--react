@@ -1,38 +1,26 @@
 [
   {
     "id": 0,
-    "albumName": "roads",
-    "defaultUrl": "/database/photos/defaultUrl/cristian-balu-a-405976-unsplash.jpg",
-    "author": "Photo by Cristian Băluță on Unsplash"
+    "albumName": "roads"
   },
   {
     "id": 1,
-    "albumName": "animals",
-    "defaultUrl": "/database/photos/defaultUrl/cristian-balu-a-405976-unsplash.jpg",
-    "author": "Photo by Cristian Băluță on Unsplash"
+    "albumName": "animals"
   },
   {
     "id": 2,
-    "albumName": "plants",
-    "defaultUrl": "/database/photos/defaultUrl/cristian-balu-a-405976-unsplash.jpg",
-    "author": "Photo by Cristian Băluță on Unsplash"
+    "albumName": "plants"
   },
   {
     "id": 3,
-    "albumName": "cars",
-    "defaultUrl": "/database/photos/defaultUrl/cristian-balu-a-405976-unsplash.jpg",
-    "author": "Photo by Cristian Băluță on Unsplash"
+    "albumName": "cars"
   },
   {
     "id": 4,
-    "albumName": "",
-    "defaultUrl": "/database/photos/defaultUrl/cristian-balu-a-405976-unsplash.jpg",
-    "author": "Photo by Cristian Băluță on Unsplash"
+    "albumName": ""
   },
   {
     "id": 5,
-    "albumName": "",
-    "defaultUrl": "/database/photos/defaultUrl/cristian-balu-a-405976-unsplash.jpg",
-    "author": "Photo by Cristian Băluță on Unsplash"
+    "albumName": ""
   }
 ]
