@@ -30,21 +30,21 @@ class AlbumsView extends Component {
                             photo =>
                               photo.albumId === id
                           ) ? (
-                            photos && photos.filter(
-                              photo => photo.albumId === id
-                            ).map(
-                              ({photos}) => {
-                                currentPhotosArrayLength = photos.length
-                                return photos.map(
-                                  photo =>
-                                    photo.url
-                                )
-                              }
-                            ).reduce(
-                              (total, next) =>
-                                total.concat(next), []
-                            )[Math.floor(Math.random() * currentPhotosArrayLength)]
-                          ) :
+                              photos && photos.filter(
+                                photo => photo.albumId === id
+                              ).map(
+                                ({photos}) => {
+                                  currentPhotosArrayLength = photos.length
+                                  return photos.map(
+                                    photo =>
+                                      photo.url
+                                  )
+                                }
+                              ).reduce(
+                                (total, next) =>
+                                  total.concat(next), []
+                              )[Math.floor(Math.random() * currentPhotosArrayLength)]
+                            ) :
                             defaultAlbumUrl
                         }
                         className={`img-responsive PhotoAlbums__Album--${id}`}
@@ -61,7 +61,11 @@ class AlbumsView extends Component {
                         <p
                           className="PhotoAlbums__Album--Description"
                         >
-                          {albumName || `Photo album ${id + 1}`}
+                          {
+                            albumName ?
+                              `${albumName} (${currentPhotosArrayLength})` :
+                              `Photo album ${id + 1}`
+                          }
                         </p>
                       </div>
                     </div>
