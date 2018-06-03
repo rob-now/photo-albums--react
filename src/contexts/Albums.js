@@ -45,7 +45,6 @@ export class AlbumsProvider extends Component {
     }
   }
 
-
   componentDidMount() {
     setIntervalId = setInterval(() => {
       this.state.getRandomColor()

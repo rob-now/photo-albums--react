@@ -20,8 +20,10 @@ class PhotosGridView extends Component {
             className="fas fa-arrow-circle-left"
             onClick={this.handleGoBackToAlbums}
           >&nbsp;</i>
-          <span
-            className="PhotosGridView__AlbumName">{albumName || `Album ${parseInt(albumId, 10) + 1}`}
+          <span>
+            {
+              albumName || `Album ${parseInt(albumId, 10) + 1}`
+            }
           </span>
         </h1>
         <PhotoItem {...this.props}/>
