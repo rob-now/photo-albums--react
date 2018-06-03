@@ -17,6 +17,6 @@ Photo albums is an app created in React and it's purpose is to present the user 
 - Clone this repository to your local drive.
 - In the repository folder
     - run `yarn` or `yarn install` or `npm install` to install all dependencies
-    - then run `yarn start` or `npm start`
+    - then run `yarn start` or `npm start`.
 
 Your default browser should open http://localhost:3000/ with the app.
