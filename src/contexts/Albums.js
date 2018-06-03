@@ -5,6 +5,8 @@ const AlbumsContext = React.createContext()
 
 export const AlbumsConsumer = AlbumsContext.Consumer
 
+let setIntervalId
+
 export class AlbumsProvider extends Component {
 
   state = {
@@ -43,8 +45,9 @@ export class AlbumsProvider extends Component {
     }
   }
 
+
   componentDidMount() {
-    setInterval(() => {
+    setIntervalId = setInterval(() => {
       this.state.getRandomColor()
     }, 8000)
 
@@ -84,6 +87,10 @@ export class AlbumsProvider extends Component {
         fetching: false
       })
     )
+  }
+
+  componentWillUnmount() {
+    clearInterval(setIntervalId)
   }
 
   render() {
